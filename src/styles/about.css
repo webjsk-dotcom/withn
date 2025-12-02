@@ -1,0 +1,73 @@
+
+
+.link{margin:50px auto 0;width:1280px;color:#333;font-size:15px;}
+.link a{color:gray;}
+
+
+.title{margin:100px auto 60px;width:1280px;font-size:35px;}
+
+.ab_visual{width:1920px;height:540px;background:pink url(./images/about/about_visual_img01.jpg) no-repeat center;background-attachment: fixed;}
+
+
+.ab_sec{margin:100px auto 0;width:1280px;height:400px;display: flex;}
+.ab_sec div{width: 50%;height: 400px;}
+.ab_sec div.s3_back{
+  background:#F6F6F6;
+  font-size:16px;
+  line-height: 1.8;
+  padding:150px 70px;
+  box-sizing: border-box;
+}
+
+
+.ab_sec1{height: 300px;position:relative;}
+.ab_sec1 div{}
+.ab_sec1 .ab_sec1_1{font-size:30px;font-weight: bold;line-height: 2;padding-top:100px;background: url(../images/about/about_plus2.png) no-repeat 195px 65px/50px;}
+.ab_sec1 .ab_sec1_2{font-size: 15px;box-sizing: border-box;padding-top: 270px;padding-left:130px;line-height: 1.8;}
+
+.ab_sec1 .s1_rot{position:absolute;right:200px;top:-30px;}
+.ab_sec1 .s1_rot img{width:250px;animation: abt_rot 70s infinite;}
+@keyframes abt_rot{
+  0%{transform: rotate(0);}
+  100%{transform: rotate(1500deg);}
+}
+
+.ab_sec1 .s1_plus{
+  position: absolute;
+  right: 295px;
+  top: 75px;}
+.ab_sec1 .s1_plus img{width:50px;}
+
+
+.ab_sec2{}
+.ab_sec2 .ab_sec2_1{background:url(../images/about/about_img01.jpg)}
+
+.ab_sec3{}
+.ab_sec3 .ab_sec3_2{background: url(../images/about/about_img02.jpg)}
+
+.ab_sec4{}
+.ab_sec4 .ab_sec4_1{background: url(../images/about/about_img03.jpg)}
+
+.ab_sec5{display: block;margin-top:130px;}
+.ab_sec5 h2{
+  text-align: center;
+  font-size:35px;
+  background: url(../images/about/about_plus2.png) no-repeat 715px 0px/35px;
+  padding-top:30px;box-sizing: border-box;
+}
+.ab_sec5 p{text-align: center;font-size:14px;margin-top:30px;line-height: 1.9;}
+
+.ab_sec5 ul{display:grid;gap: 20px;grid-template-columns: repeat(4, 1fr);margin-top:70px;}
+.ab_sec5 ul li{border:1px solid rgba(0,0,0,0.1);width:305px;height:305px;text-align: center;}
+.ab_sec5 ul li img{width:32%}
+.ab_sec5 ul li a{
+  color:#333;
+  width: 305px;
+  height: 270px;
+  display: inline-block;
+  padding-top: 70px;
+  box-sizing: border-box;
+}
+
+
+

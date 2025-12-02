@@ -1,0 +1,14 @@
+
+/* footer */
+.footer{
+  width:100%;height:200px;background-color: #F4F4F4;margin-top:300px;
+}
+.footer .foot_in{margin:0 auto;width:1280px;padding-top:50px;box-sizing: border-box;font-size:13px;}
+.footer .foot_in div{float:left;}
+.footer .foot_in .foot1{line-height: 2.3;width:60%}
+.footer .foot_in .foot2{text-align: right;width:40%}
+.footer .foot_in .foot2 span{}
+.footer .foot_in .foot2 a{background:#ddd;padding:10px 20px;margin-bottom:30px;display: inline-block;color:#333;font-size:13px;}
+
+
+

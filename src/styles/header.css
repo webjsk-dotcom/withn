@@ -1,0 +1,151 @@
+
+/* header */
+header {
+  width: 100%;
+  position: relative;
+  z-index: 20;
+
+}
+
+header .header_logo {
+  /* padding: 40px 0 22px; */
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  height: 90px;
+
+}
+
+header .header_logo h1 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+header .header_logo h1 img {
+  width: 160px;
+}
+
+
+
+#h_top {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+#h_top ul {}
+
+#h_top ul li {
+  float: left;
+}
+
+#h_top ul li a {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 4px 12px;
+  margin-left: 10px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  color: #333;
+  transition: all 0.4s;
+}
+#h_top ul li:hover a{
+  background-color: #333;
+  color:#fff;
+}
+#h_top ul li a.earth {
+  width: 32.5px;
+  padding: 5px 0;
+  background: url(/images/icon_global_subway.png) no-repeat center;
+}
+#h_top ul li:hover a.earth {
+  background: #333 url(/images/icon_global_subway2.png) no-repeat center;
+}
+
+
+
+
+header .header_menu {  
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+nav {
+  margin: 0 auto;
+  width: 100%;
+  height: 50px;
+  /* background-color: #999; */
+  text-align: center;
+  position: relative;
+}
+
+nav>ul {
+  width: 100%;
+  height: 50px;
+  /* background-color: #ccc; */
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.3s;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+nav>ul:hover {
+  height: 250px;
+}
+
+nav>ul>li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+nav>ul>li>a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+nav>ul>li:hover>a {
+  color: #527e3f;
+}
+
+nav>ul>li>a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  /* transform-origin: left top; */
+  width: 100%;
+  /*margin-left:25%;*/
+  height: 2px;
+  /* background-color: #333; */
+  background-color: #527e3f;
+  transform: scale(0, 1);
+  transition: all 0.5s;
+}
+
+nav>ul>li:hover>a::after {
+  transform: scale(1, 1);
+}
+
+nav ul li ul li a {
+  height: 40px;
+  line-height: 40px;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li ul li a:hover {
+  color: #527e3f;
+}
