@@ -10,6 +10,7 @@ import 'swiper/css/pagination';
 import '../styles/withMain.css'
 import Visual from './Visual';
 
+
 export default function WithMain() {
 
   // section1
