@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-import '../styles/withMain.css'
+import '../styles/withmain.css'
 import Visual from './Visual';
 
 
