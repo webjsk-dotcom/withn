@@ -6,7 +6,7 @@
 
 .title{margin:100px auto 60px;width:1280px;font-size:35px;}
 
-.ab_visual{width:1920px;height:540px;background:pink url(./images/about/about_visual_img01.jpg) no-repeat center;background-attachment: fixed;}
+.ab_visual{width:1920px;height:540px;background:pink url(../images/about/about_visual_img01.jpg) no-repeat center;background-attachment: fixed;}
 
 
 .ab_sec{margin:100px auto 0;width:1280px;height:400px;display: flex;}
