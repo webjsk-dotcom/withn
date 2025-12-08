@@ -43,13 +43,13 @@ export default function Header() {
           <h1 className='logo'><Link to="/" ><img src="images/img_logo2.png" alt="logo" /></Link></h1>
           
           <div id="h_top">
-          <ul>
-            <li><a href="#">매장찾기</a></li>
-            <li><a href="#">가맹신청·문의</a></li>
-            <li><a href="#">고객센터</a></li>
-            <li><a href="#" className='earth' aria-label='언어 변경'></a></li>
-          </ul>
-        </div>
+            <ul>
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#">가맹신청·문의</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li><a href="#" className='earth' aria-label='언어 변경'></a></li>
+            </ul>
+          </div>
         {/* h_top e */}
         </div>
         {/* header_logo e */}
