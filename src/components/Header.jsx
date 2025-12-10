@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import '../styles/header.css';
@@ -37,7 +37,26 @@ export default function Header() {
   ];
   
 
+// 
+  const [isScrolled, setIsScrolled] = useState(false);  
+
+// top_w
+ useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
   return (
+    <div>
     <header>
         <div className="header_logo">
           <h1 className='logo'><Link to="/" ><img src="images/img_logo2.png" alt="logo" /></Link></h1>
@@ -79,5 +98,10 @@ export default function Header() {
           </nav>
         </div>
       </header>
+
+      <p className={`top_w ${isScrolled ? "show" : ""}`}><a href="#top"  className="top" >
+        <img src="/images/top.png" alt="top" />
+      </a></p>
+    </div>
   )
 }

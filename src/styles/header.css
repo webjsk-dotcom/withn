@@ -149,3 +149,48 @@ nav ul li ul li a {
 nav ul li ul li a:hover {
   color: #527e3f;
 }
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* top_w */
+.top_w {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  /* display: none; */
+  z-index: 30;
+}
+
+.top_w a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.5s;
+}
+/* 스크롤 시 표시 */
+.top_w.show a{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.top_w img {
+  margin-top: 17px;
+}
+
+.top_w:hover a {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
