@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import '../styles/header.css';
@@ -37,10 +37,30 @@ export default function Header() {
   ];
   
 
-// 
+// header_menu
+const headerRef = useRef(null);
+  const [isFixed, setIsFixed] = useState(false);
+  const [offsetTop, setOffsetTop] = useState(0);
+
+  useEffect(() => {
+    if (headerRef.current) {
+      setOffsetTop(headerRef.current.offsetTop);
+    }
+
+    const handleScroll = () => {
+      setIsFixed(window.scrollY >= offsetTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [offsetTop]);
+
+
+
+
+//top_w
   const [isScrolled, setIsScrolled] = useState(false);  
 
-// top_w
  useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -74,7 +94,7 @@ export default function Header() {
         {/* header_logo e */}
 
 
-        <div className="header_menu">
+        <div ref={headerRef} className={`header_menu ${isFixed ? "fixed" : ""}`}>
           <nav>
             <ul className="gnb">
               {navMenus.map((menu, index) => (
