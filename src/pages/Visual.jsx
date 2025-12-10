@@ -13,9 +13,12 @@ export default function Visual() {
 
   // const BasicSlider = () => {
   const slides = [
-    { id: 1, image: './images/visual-1.jpg' },
-    { id: 2, image: './images/visual-2.jpg' },
-    { id: 3, image: './images/visual-3.jpg' },
+    { id: 1, image: './images/cont4-1.jpg' },
+    { id: 2, image: './images/cont4-2.jpg' },
+    { id: 3, image: './images/cont4-3.jpg' },
+    { id: 4, image: './images/cont4-4.jpg' },
+    { id: 5, image: './images/cont4-5.jpg' },
+    { id: 6, image: './images/cont4-6.jpg' },
   ];
 
   return (
