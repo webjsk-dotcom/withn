@@ -58,7 +58,7 @@
 .ab_sec5 p{text-align: center;font-size:14px;margin-top:30px;line-height: 1.9;}
 
 .ab_sec5 ul{display:grid;gap: 20px;grid-template-columns: repeat(4, 1fr);margin-top:70px;}
-.ab_sec5 ul li{border:1px solid rgba(0,0,0,0.1);width:305px;height:305px;text-align: center;}
+.ab_sec5 ul li{border:1px solid rgba(0,0,0,0.1);width:305px;height:305px;text-align: center;position: relative;}
 .ab_sec5 ul li img{width:32%}
 .ab_sec5 ul li a{
   color:#333;
@@ -68,6 +68,19 @@
   padding-top: 70px;
   box-sizing: border-box;
 }
+
+/* .ab_sec5 ul li span hover */
+.ab_sec5 ul li span{display:inline-block;position:absolute;background:rgba(0,0,0,0.4);transition: all 0.5s;}
+.ab_sec5 ul li .s5-1{width:0%;height:1px;top:0;left:0;}
+.ab_sec5 ul li .s5-2{width:1px;height:0;bottom:0;right:0;}
+.ab_sec5 ul li .s5-3{width:0;height:1px;bottom:0;right:0;}
+.ab_sec5 ul li .s5-4{width:1px;height:0;top:0;left:0;}
+
+.ab_sec5 ul li:hover .s5-1{width: 100%;}
+.ab_sec5 ul li:hover .s5-2{height: 100%;}
+.ab_sec5 ul li:hover .s5-3{width: 100%;}
+.ab_sec5 ul li:hover .s5-4{height: 100%;}
+
 
 
 
