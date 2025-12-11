@@ -70,39 +70,39 @@ export default function About() {
         <ul>
           <li><a href="#"><img src="./images/about/about_icon01.png" alt="" />
             <p>합리적인 가격정책</p>
-            <div className="cap1">
+            
               <span className="s5-1"></span>
               <span className="s5-2"></span>
               <span className="s5-3"></span>
               <span className="s5-4"></span>
-            </div>
+            
           </a></li>
           <li><a href="#"><img src="./images/about/about_icon02.png" alt="" />
             <p>철저한 품질관리</p>
-            <div className="cap1">
+            
               <span className="s5-1"></span>
               <span className="s5-2"></span>
               <span className="s5-3"></span>
               <span className="s5-4"></span>
-            </div>
+            
           </a></li>
           <li><a href="#"><img src="./images/about/about_icon03.png" alt="" />
             <p>지속적인 제품 혁신</p>
-            <div className="cap1">
+            
               <span className="s5-1"></span>
               <span className="s5-2"></span>
               <span className="s5-3"></span>
               <span className="s5-4"></span>
-            </div>
+            
           </a></li>
           <li><a href="#"><img src="./images/about/about_icon04.png" alt="" />
             <p>신속한 고객 서비스</p>
-            <div className="cap1">
+            
               <span className="s5-1"></span>
               <span className="s5-2"></span>
               <span className="s5-3"></span>
               <span className="s5-4"></span>
-            </div>
+            
           </a></li>
         </ul>
       </section>

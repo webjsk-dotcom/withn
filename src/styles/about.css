@@ -67,7 +67,9 @@
   display: inline-block;
   padding-top: 70px;
   box-sizing: border-box;
+  
 }
+
 
 /* .ab_sec5 ul li span hover */
 .ab_sec5 ul li span{display:inline-block;position:absolute;background:rgba(0,0,0,0.4);transition: all 0.5s;}
