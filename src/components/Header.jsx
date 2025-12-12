@@ -78,8 +78,8 @@ const headerRef = useRef(null);
   return (
     <div>
     <header>
-        <div className="header_logo">
-          <h1 className='logo'><Link to="/" ><img src="images/img_logo2.png" alt="logo" /></Link></h1>
+        
+          <h1><Link to="/" ><img src="images/img_logo2.png" alt="logo" className='logo' /></Link></h1>
           
           <div id="h_top">
             <ul>
@@ -90,8 +90,7 @@ const headerRef = useRef(null);
             </ul>
           </div>
         {/* h_top e */}
-        </div>
-        {/* header_logo e */}
+       
 
 
         <div ref={headerRef} className={`header_menu ${isFixed ? "fixed" : ""}`}>
